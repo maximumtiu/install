@@ -19,8 +19,6 @@ brew cask install alfred
 brew cask install caffeine
 brew cask install spotify
 
-rvm install 2.3.1
-rvm use 2.3.1 --default
 gem install bundler
 gem install homesick
 
