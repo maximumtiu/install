@@ -19,6 +19,10 @@ brew cask install alfred
 brew cask install caffeine
 brew cask install spotify
 
+# callrail-specific
+brew cask install skype
+brew cask install 1password
+
 gem install bundler
 gem install homesick
 
