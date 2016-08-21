@@ -1,5 +1,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-\curl -sSL https://get.rvm.io | bash --ruby=2.3.1
+\curl -sSL https://get.rvm.io | bash
+rvm install 2.3
+rvm use 2.3
 
 brew update
 brew tap caskroom/cask
