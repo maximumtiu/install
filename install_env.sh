@@ -13,6 +13,7 @@ brew install imagemagick
 brew install postgresql
 brew install redis
 brew install zsh
+
 brew cask install flux
 brew cask install google-chrome
 brew cask install iterm2
