@@ -1,7 +1,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 \curl -sSL https://get.rvm.io | bash
-rvm install 2.3
-rvm use 2.3
+rvm install 2.4
+rvm use 2.4
 
 brew update
 brew tap caskroom/cask
@@ -12,6 +12,7 @@ brew install coreutils
 brew install imagemagick
 brew install postgresql
 brew install redis
+brew install tree
 brew install zsh
 
 brew cask install flux
