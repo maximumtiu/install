@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# color constants
+PURPLE='\033[0;35m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+printf "\n"
+echo "✨  Hello ✨"
+printf "\n"
+
+# git config
+echo -e "${PURPLE}Let's configure git.${NC}"
+
+echo -e "${PURPLE}What name would you like associated with your commits?${NC}"
+read -a name
+git config --global user.name $name
+
+echo -e "${PURPLE}What email address would you like to use?${NC}"
+read -a email
+git config --global user.email $email
+echo -e "Thanks $name! 👍"
+
+# ssh key generation + instructions
+printf "\n"
+if [[ ! -d ~/.ssh ]] ; then
+  mkdir ~/.ssh
+  touch ~/.ssh/config
+fi
+
+if [[ ! -x ~/.ssh/id_rsa.pub ]] ; then
+  echo -e "${PURPLE}Generating a new SSH key for you...${NC}"
+  ssh-keygen -t rsa -b 4096 -C $email
+  echo -e "${RED}SSH key generated 👍 Now, you'll need to add your new key to GitHub. In another tab, run \`cat ~/.ssh/id_rsa.pub | pbcopy\` and add it at https://github.com/settings/keys${NC}"
+  echo -e "${RED}I'll wait while you do those things now; it's important for the rest of your setup. Please press any key once that's complete and you're ready to move on.${NC}"
+  read -p ""
+fi
+
+# ssh config
+printf "\n"
+echo -e "${PURPLE}Modifying your SSH config to remember your key...${NC}"
+cat ./ssh-config.default >> ~/.ssh/config
+ssh-add -K ~/.ssh/id_rsa
+
+printf "\n"
+echo -e "${PURPLE}Okay, now I'll set up your environment for you.${NC}"
+echo -e "${PURPLE}Installing dependencies...${NC}"
+
+bash ./install_env.sh
+
+echo -e "${PURPLE}All done! ✅${NC}"
