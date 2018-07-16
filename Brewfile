@@ -12,7 +12,6 @@ brew 'tree'
 brew 'zsh'
 
 cask 'flux'
-cask 'google-chrome'
 cask 'iterm2'
 cask 'alfred'
 cask 'caffeine'
