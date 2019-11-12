@@ -9,6 +9,18 @@ printf "\n"
 echo "✨  Hello ✨"
 printf "\n"
 
+# git config
+echo -e "${PURPLE}Let's configure git.${NC}"
+
+echo -e "${PURPLE}What name would you like associated with your commits?${NC}"
+read -a name
+git config --global user.name $name
+
+echo -e "${PURPLE}What email address would you like to use?${NC}"
+read -a email
+git config --global user.email $email
+echo -e "Thanks $name! 👍"
+
 # ssh key generation + instructions
 printf "\n"
 if [[ ! -d ~/.ssh ]] ; then
