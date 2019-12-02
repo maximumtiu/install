@@ -20,3 +20,13 @@ cask 'spotify'
 cask 'dropbox'
 cask 'karabiner-elements'
 cask 'stretchly'
+
+# to compile QMK firmware
+# https://docs.qmk.fm/#/getting_started_build_tools?id=macos
+tap 'osx-cross/avr'
+tap 'PX4/homebrew-px4'
+brew 'avr-gcc@8'
+brew 'dfu-programmer'
+brew 'dfu-util'
+brew 'gcc-arm-none-eabi'
+brew 'avrdude'
