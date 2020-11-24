@@ -3,10 +3,11 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew bundle
 
-curl -sSL https://get.rvm.io | bash -s stable --ruby=2.6 --gems=bundler,homesick
+curl -sSL https://get.rvm.io | bash -s stable --ruby=2.7 --gems=bundler,homesick
 
 (
 source /Users/megan/.rvm/scripts/rvm
+gem install bundler homesick
 homesick clone megantiu/dotfiles
 homesick symlink dotfiles
 cd ~/.homesick/repos/dotfiles
