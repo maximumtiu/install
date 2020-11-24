@@ -12,6 +12,7 @@ brew 'tree'
 brew 'dfu-programmer'
 brew 'zsh'
 
+cask '1password'
 cask 'flux'
 cask 'iterm2'
 cask 'alfred'
@@ -20,6 +21,14 @@ cask 'spotify'
 cask 'dropbox'
 cask 'karabiner-elements'
 cask 'stretchly'
+cask 'notion'
+cask 'zoomus'
+cask 'imageoptim'
+cask 'telegram'
+cask 'selfcontrol'
+cask 'discord'
+# from Mac app store
+# Skitch, Be Focused, Color Note, Parcel, Pocket, Meeter, Slack, Todoist
 
 # to compile QMK firmware
 # https://docs.qmk.fm/#/getting_started_build_tools?id=macos
