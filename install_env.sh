@@ -6,9 +6,9 @@ brew bundle
 curl -sSL https://get.rvm.io | bash -s stable --ruby=2.7 --gems=bundler,homesick
 
 (
-source /Users/megan/.rvm/scripts/rvm
+source /Users/max/.rvm/scripts/rvm
 gem install bundler homesick
-homesick clone megantiu/dotfiles
+homesick clone maximumtiu/dotfiles
 homesick symlink dotfiles
 cd ~/.homesick/repos/dotfiles
 bin/install
