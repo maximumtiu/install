@@ -14,5 +14,6 @@ This is a collection of scripts I use to set up a new computer from scratch. It:
 2. Clone this repository.
 3. Run `./setup`
 
-Things that can't be automated:
-* [Download Logitech Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) (for the Logitech MX Vertical mouse)
+Things that should be done prior to running this script with a new, out-of-the-box machine:
+* Install Chrome
+* Install 1Password and login to GitHub

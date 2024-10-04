@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 tap 'homebrew/cask'
 
 brew 'bash'
+brew 'zsh'
 brew 'git'
 brew 'vim'
 brew 'coreutils'
@@ -10,7 +11,10 @@ brew 'postgresql'
 brew 'redis'
 brew 'tree'
 brew 'dfu-programmer'
-brew 'zsh'
+brew 'docker'
+brew 'docker-compose'
+brew 'yarn'
+brew 'the_silver_searcher'
 
 cask '1password'
 cask 'flux'
@@ -22,13 +26,16 @@ cask 'dropbox'
 cask 'karabiner-elements'
 cask 'stretchly'
 cask 'notion'
-cask 'zoomus'
+cask 'zoom'
 cask 'imageoptim'
-cask 'telegram'
 cask 'selfcontrol'
 cask 'discord'
+cask 'logi-options+'
+cask 'logitech-camera-settings'
+cask 'docker'
+
 # from Mac app store
-# Skitch, Be Focused, Color Note, Parcel, Pocket, Meeter, Slack, Todoist
+# Skitch, Be Focused, Color Note, Parcel, Pocket, Meeter, Slack, Todoist, WhatsApp
 
 # to compile QMK firmware
 # https://docs.qmk.fm/#/getting_started_build_tools?id=macos
